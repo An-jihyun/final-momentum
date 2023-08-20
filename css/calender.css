@@ -1,0 +1,71 @@
+/* 달력 */
+.dateHead div {
+  background: #000000;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.dateTitle {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+
+.grid div {
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.dateBoard div {
+  color: #222;
+  font-weight: bold;
+  min-height: 5px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.noColor {
+  background: #000000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 15px;
+}
+
+/* 좌우 버튼 */
+.btn {
+ display: block;
+ width: 20px;
+ height: 20px;
+ border: 3px solid #000;
+ border-width: 3px 3px 0 0;
+ cursor: pointer;
+}
+
+.prevDay {
+  transform: rotate(-135deg);
+}
+
+.nextDay {
+  transform: rotate(45deg);
+}
+
+.calendar-form {
+  max-width: 820px;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.dateHead {
+  margin: 10px 0;
+}

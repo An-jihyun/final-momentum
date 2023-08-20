@@ -1,0 +1,30 @@
+
+.section3 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song{
+  width: 800px;
+  height: 800px;
+  position: fixed;
+  right: -650px;
+  transition: right 1s;
+  z-index: 100;
+}
+
+.song:hover {
+  right: -50px;
+  transition: right 1s;
+  z-index: 100;
+}
+
+.cdImg {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  cursor: pointer;
+}

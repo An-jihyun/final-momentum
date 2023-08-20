@@ -1,0 +1,84 @@
+.section1 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.clockDiv{
+  position: fixed;
+  left: -180px;
+  transition: left 1s;
+  margin-top: -500px;
+  cursor: pointer;
+}
+
+.clockDiv:hover {
+  left: 0;
+  transition: left 1s;
+}
+
+.pin {
+  position: absolute;
+  margin-left: 180px;
+  margin-top: -30px;
+  width: 100px;
+  height: 100px;
+}
+
+.clockPaper {
+  width: 300px;
+  height: 300px;
+}
+
+.clock {
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-size: 45px;
+}
+
+.weather-form {
+  width: 150px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+}
+
+.weatherDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  margin-left: -20px;
+}
+
+.tomatoDiv {
+  margin-top: 500px;
+}
+
+.tomato {
+  width: 200px;
+  height: 200px;
+  margin-left: 130px;
+}
+
+.tomatoBtn {
+  background-color: rgba(255, 255, 255, 0);
+  width: 200px;
+  height: 190px;
+  margin-left: 130px;
+  margin-top: 10px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+}
+

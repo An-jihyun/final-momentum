@@ -1,0 +1,64 @@
+.memoDiv {
+  position: absolute;
+  width: 270px;
+  height: 170px;
+  margin-right: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.memoInput {
+  font-size: 15px;
+  width: 200px;
+  border: none;
+  border-bottom: 2px ridge black;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: none;
+  z-index: 4;
+  position: relative;
+}
+
+.memoLabel {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 15px;
+  transition: all .2s;
+  width: 170px;
+  color: black;
+  font-weight: 600;
+  margin-left: -50px;
+  margin-top: 10px;
+  }
+
+  .memoInput:focus ~ .memoLabel {
+    font-size: 10px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: -40px;
+    }
+
+    .memoListDiv {
+      width: 270px;
+      height: 310px;
+      position: relative;
+      overflow-y: scroll;
+    }
+
+    .memoListDiv::-webkit-scrollbar {
+      display: none;
+    }
+
+    #memo-list {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }

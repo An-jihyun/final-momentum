@@ -1,0 +1,146 @@
+
+h1 {
+  position: absolute;
+  margin-top: -150px;
+  margin-left: -50px;
+}
+
+video {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: 800;
+}
+
+.title-top {
+  z-index: 3;
+  -webkit-text-stroke: 3px white;
+  color: rgba(255, 255, 255, 0);
+}
+
+.title-under {
+  z-index: 1;
+}
+
+#login-form {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#login-form div {
+  position: relative;
+  width: 300px;
+  margin: 50px 0 0 0px;
+  z-index: 4;
+}
+
+.login__input {
+  font-size: 30px;
+  width: 500px;
+  border: none;
+  border-bottom: 5px solid white;
+  padding-top: 100px;
+  margin-bottom: -10px;
+  text-align: center;
+  background: none;
+  z-index: 4;
+  position: relative;
+  margin-left: -120px;
+}
+
+.login__label {
+position: absolute;
+left: 140px;
+transform: translateX(-50%);
+font-size: 50px;
+bottom: 8px;
+transition: all .2s;
+width: 500px;
+color: white;
+font-weight: bold;
+}
+
+input:focus ~ .login__label {
+font-size: 40px;
+bottom: 50px;
+color: #ffffff;
+font-weight: bold;
+margin-left: 45px;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
+  }
+}
+
+.login__submit {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  position: absolute;
+  margin-top: 300px;
+  animation: color 3s infinite;
+  animation-delay: 5s;
+  float: left;
+  font-size: 50px;
+  transform: translateY(-50px);
+  opacity: 0;
+  color: #fa6aa600;
+  margin-left: -30px;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  animation: titleAnimation 1s forwards;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+.login__submit {
+  -webkit-text-stroke: 3px rgb(255, 255, 255);
+  color: #c0264f00;
+  z-index: 7;
+  cursor: pointer;
+}
+
+.login__submit:active {
+  outline: none;
+  border: none;
+  font-size: 30px;
+}
+
+.login__submit:hover {
+  font-size: 45px;
+}
+
+/* #greeting {
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 100px;
+} */

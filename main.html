@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOMENTUM</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="mainBody">
+    <video class="mainBg" muted autoplay loop></video>
+    <section class="section1">
+      <div class="clockDiv">
+        <h2 class="clock">00:00:00</h2>
+        <img class="pin" src="src/pin.png" />
+        <img class="clockPaper" src="src/clockpaper.jpg" />
+        <div class="weather-form">
+          <div class="weatherIconDiv">
+            <img class="weatherIcon" />
+          </div>
+          <div class="weatherDiv">
+            <span class="weather"></span>
+            <span class="temp"></span>
+            <span class="cityName"></span>
+          </div>
+        </div>
+      </div>
+      <div class="tomatoDiv">
+        <button class="tomatoBtn"></button>
+        <img class="tomato" src="src/tomato.png" />
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="pomoWatchDiv">
+        <div class="timer">
+          <div class="fins"></div>
+          <div class="num-container"></div>
+          <div class="cover1"></div>
+          <div class="cover2">
+            <i class="fa-solid fa-play timerBtn"></i>
+          </div>
+          <div class="lines"></div>
+        </div>
+        <img class="pomoWatch" src="src/pomodorowatch.png" />
+      </div>
+
+      <div class="searchDiv">
+        <h2 class="hidden name" id="greeting"></h2>
+
+        <form class="search">
+          <select class="selectSearch" name="whichSearch">
+            <option class="google" value="google">Google</option>
+            <option class="naver" value="naver">Naver</option>
+          </select>
+          <div class="fakeInput">
+            <input
+              class="keyword"
+              type="text"
+              name="search"
+              maxlength="255"
+              value=""
+              autocomplete="off"
+            />
+            <button class="img-button" type="submit" name="click" value="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="bookDiv">
+        <div class="calenderDiv">
+          <div class="calendar-form">
+            <div class="header">
+              <div class="btn prevDay"></div>
+              <h2 class="dateTitle"></h2>
+              <div class="btn nextDay"></div>
+            </div>
+
+            <div class="grid dateHead">
+              <div>S</div>
+              <div>M</div>
+              <div>T</div>
+              <div>W</div>
+              <div>T</div>
+              <div>F</div>
+              <div>S</div>
+            </div>
+
+            <div class="grid dateBoard"></div>
+          </div>
+          <div class="memoDiv">
+            <form id="memo-form">
+              <input class="memoInput" type="text" required />
+              <label class="memoLabel">MEMO :)</label>
+            </form>
+            <div class="memoListDiv">
+              <ul id="memo-list"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="todoDiv">
+          <form id="todo-form">
+            <input class="todoInput" type="text" required />
+            <label class="todoLabel">TO DO LIST</label>
+          </form>
+          <div class="listDiv">
+            <ul id="todo-list"></ul>
+          </div>
+        </div>
+        <img class="bookImg" src="src/book.png" />
+      </div>
+      <div class="penDiv">
+        <img class="penImg" src="src/pen.png" />
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="song">
+        <img class="cdImg" src="src/cd.png" />
+      </div>
+    </section>
+
+    <div id="splash-screen">
+      <h2 class="hidden" id="greeting"></h2>
+    </div>
+    <script src="js/background.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/pomodoro.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/memo.js"></script>
+
+    <script src="https://kit.fontawesome.com/9559f47415.js" crossorigin="anonymous"></script>
+  </body>
+</html>
