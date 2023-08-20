@@ -16,8 +16,6 @@ function showModal() {
 
 // 클릭하면 showModal 실행
 modalShow.addEventListener("click", showModal);
-// 클릭하면 show-modal 클래스 제거하면서 modal이 닫히도록
-modalClose.addEventListener("click", () => modal.classList.remove("show-modal"));
 // target이 modal이면 show-modal 클래스를 없애고 아니면 아무것도 안하겠다!!!
 window.addEventListener("click", (e) =>
   e.target === modal ? modal.classList.remove("show-modal") : false
