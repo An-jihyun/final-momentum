@@ -44,7 +44,7 @@
 
     .memoListDiv {
       width: 270px;
-      height: 310px;
+      height: 110px;
       position: relative;
       overflow-y: scroll;
     }

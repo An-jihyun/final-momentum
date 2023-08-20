@@ -109,14 +109,38 @@
         </div>
         <img class="bookImg" src="src/book.png" />
       </div>
-      <div class="penDiv">
-        <img class="penImg" src="src/pen.png" />
-      </div>
     </section>
 
     <section class="section3">
-      <div class="song">
-        <img class="cdImg" src="src/cd.png" />
+      <div class="penDiv">
+        <button class="penBtn">
+          <img class="penImg" src="src/pen.png" />
+        </button>
+
+        <div class="modal">
+          <div class="modal-header">
+            <h3>북마크 추가</h3>
+          </div>
+          <div class="modal-content">
+            <form id="bookmark-form">
+              <div class="form-group">
+                <label for="website-name" class="form-label">이름</label>
+                <input type="text" class="form-input" id="website-name" />
+              </div>
+
+              <div class="form-group">
+                <label for="website-url" class="form-label">URL</label>
+                <input type="text" class="form-input" id="website-url" />
+              </div>
+              <button type="submit">저★장</button>
+            </form>
+          </div>
+        </div>
+        <div class="modalList">
+          <h1 id="show-modal">북마크</h1>
+          <div class="container" id="bookmarks-container"></div>
+          <div class="modal-container" id="modal"></div>
+        </div>
       </div>
     </section>
 
@@ -132,6 +156,7 @@
     <script src="js/search.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/memo.js"></script>
+    <script src="js/bookmarks.js"></script>
 
     <script src="https://kit.fontawesome.com/9559f47415.js" crossorigin="anonymous"></script>
   </body>

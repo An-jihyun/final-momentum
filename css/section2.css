@@ -3,6 +3,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .searchDiv {
@@ -52,7 +53,7 @@
   font-weight: 600;
   z-index: 97;
   background-color: rgba(255, 255, 255, 0);
-  padding-left: 50px;
+  padding-left: 10px;
 }
 
 .fakeInput button {
@@ -77,6 +78,7 @@
   border-right: 5px ridge rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
+  z-index: 50;
 }
 
 .bookDiv {
@@ -139,7 +141,7 @@
 
     .listDiv {
       width: 270px;
-      height: 310px;
+      height: 293px;
       position: relative;
       overflow-y: scroll;
     }
@@ -160,7 +162,7 @@
 
 .bookImg {
   width: 650px;
-  height: 500px;
+  height: 480px;
 }
 
 .penDiv {
